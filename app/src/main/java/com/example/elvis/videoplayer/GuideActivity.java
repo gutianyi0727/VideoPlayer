@@ -38,8 +38,8 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
 
     private void initDots() {
         LinearLayout dotsLinearLayout = findViewById(R.id.ll_dots_layout);
-        mDotList = new ImageView[3];
-        for (int i = 0; i <3 ; i++){
+        mDotList = new ImageView[mViewList.size()];
+        for (int i = 0; i <mViewList.size() ; i++){
             mDotList[i] = (ImageView) dotsLinearLayout.getChildAt(i);
             mDotList[i].setEnabled(false);
         }
@@ -100,8 +100,8 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
 
     private void setGuided() {
         SharedPreferences sp = getSharedPreferences("config",MODE_PRIVATE);
-        sp.edit().putBoolean("mIsFirstIn",false);
-        sp.edit().commit();
+        sp.edit().putBoolean("mIsFirstIn",false).commit();
+
     }
 
     class MyPagerAdapter extends PagerAdapter {

@@ -16,7 +16,7 @@
         <item
             android:id="@+id/navigation_item_about"
             android:icon="@drawable/iconfont_about"
-            android:title="关于VideoPlayer" />
+            android:title="关于SuperVideo" />
     </group>
 
 </menu>
