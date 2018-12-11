@@ -4,8 +4,6 @@ package com.example.elvis.videoplayer;
  * Describe:
  */
 
-import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,6 +11,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Gravity;
 import android.view.MenuItem;
+
+import com.example.elvis.videoplayer.base.BaseActivity;
 
 public class HomeActivity extends BaseActivity {
 
@@ -45,7 +45,7 @@ public class HomeActivity extends BaseActivity {
         mPreItem = mNavigationView.getMenu().getItem(0);
         mPreItem.setChecked(true);
         initFragment();
-        handleNatigationView();
+        handleNavigationView();
     }
 
     private void initFragment() {
@@ -54,7 +54,7 @@ public class HomeActivity extends BaseActivity {
         mFragmentManager.beginTransaction().add(R.id.fl_main_content, mCurrentFragment).commit();
     }
 
-    private void handleNatigationView() {
+    private void handleNavigationView() {
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {

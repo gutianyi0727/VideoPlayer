@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_40dp"
         android:textSize="@dimen/dimen_28sp"
-        android:layout_gravity="bottom|left"
+        android:layout_gravity="bottom|right"
         android:layout_marginLeft="@dimen/dimen_6dp"
         android:textColor="@color/white"
 

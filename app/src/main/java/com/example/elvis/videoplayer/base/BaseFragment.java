@@ -1,4 +1,4 @@
-package com.example.elvis.videoplayer;
+package com.example.elvis.videoplayer.base;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

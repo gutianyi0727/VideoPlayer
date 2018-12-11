@@ -1,10 +1,12 @@
-package com.example.elvis.videoplayer;
+package com.example.elvis.videoplayer.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import com.example.elvis.videoplayer.R;
 
 /**
  * Created by Tianyi Gu.
